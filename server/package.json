@@ -10,6 +10,7 @@
   "module": "EsNext",
   "scripts": {
     "dev": "ts-node-dev --transpileOnly --ignore-watch node_module src/server.ts",
+    "app": "node src/server.ts",
     "knex:seed": "knex --knexfile knexfile.ts seed:run",
     "knex:migrate": "knex --knexfile knexfile.ts migrate:latest"
   },

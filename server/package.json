@@ -2,7 +2,12 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.ts",
+  "engines": {
+    "node": "12.x"
+  },
+  "type": "module",
+  "module": "EsNext",
   "scripts": {
     "dev": "ts-node-dev --transpileOnly --ignore-watch node_module src/server.ts",
     "knex:seed": "knex --knexfile knexfile.ts seed:run",
